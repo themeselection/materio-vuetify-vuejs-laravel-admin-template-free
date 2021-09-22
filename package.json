@@ -1,0 +1,43 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "axios": "^0.21",
+        "babel-eslint": "^10.1.0",
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "deepmerge": "^4.2.2",
+        "eslint": "^6.7.2",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-vue": "^6.2.2",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "sass": "~1.32.0",
+        "sass-loader": "^10.0.0",
+        "vue-cli-plugin-vuetify": "~2.4.2",
+        "vue-loader": "15.9.8",
+        "vue-template-compiler": "^2.6.11",
+        "vuetify-loader": "^1.7.0"
+    },
+    "dependencies": {
+        "@mdi/js": "^5.9.55",
+        "@vue/composition-api": "1.0.4",
+        "@vuetify/cli-plugin-utils": "^0.0.9",
+        "apexcharts": "^3.27.3",
+        "core-js": "^3.6.5",
+        "vue": "^2.6.11",
+        "vue-apexcharts": "^1.6.2",
+        "vue-router": "^3.2.0",
+        "vuetify": "^2.4.0",
+        "vuetifyjs-mix-extension": "0.0.20",
+        "vuex": "^3.4.0"
+    }
+}
