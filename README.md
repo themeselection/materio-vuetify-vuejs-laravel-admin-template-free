@@ -39,29 +39,77 @@ Build premium quality applications with ease. Use our innovative admin template 
 
 > We recommend you use yarn
 
-1. Install all packages
+1. Install composer packages
+
+   ```bash
+   composer install
+
+   ```
+
+2. In the root directory, you will find a file named .env.example, rename the given file name to .env and run the following command to generate the key (You can also setup your database credentials here).
+
+   ```bash
+   php artisan key:generate
+
+   ```
+
+3. By running the following command, you will be able to get all the dependencies in your node_modules folder:
 
    ```bash
    yarn
 
-   # npm install [for npm]
+    # npm install [for npm]
    ```
 
-2. Run development server
+4. To run the project, you need to run following command in the project directory. It will compile the php files & all the other project files. If you are making any changes in any of the php file then you need to run the given command again.
 
    ```bash
-   yarn serve
+   yarn dev
 
-   # npm run serve [for npm]
+    # npm run development [for npm]
    ```
 
-3. Generate build files for deployment
+5. To serve the application you need to run the following command in the project directory. (This will give you an address with port number 8000.)
 
    ```bash
-   yarn build
+   php artisan serve
 
-   # npm run build [for npm]
    ```
+
+6. To change the port address, run the following command:
+
+   ```bash
+    php artisan serve --port=8080 // For port 8080
+    sudo php artisan serve --port=80 // If you want to run it on port 80, you probably need to sudo.
+
+   ```
+
+7. `Watching for changes`: If you want to watch all the changes you make in the application then run the following command in the root directory.
+
+   ```bash
+    yarn watch
+    
+    # npm run watch [for npm]
+   ```
+
+8. `Building for Production:` If you want to run the project and make the build in the production mode then run the following command in the root directory, otherwise the project will continue to run in the development mode.
+
+**Make sure to change the APP_ENV=local variable's value APP_ENV=production.**
+
+   ```bash
+    yarn prod
+    
+    # npm run production [for npm]
+   ```
+
+## Required Permissions
+
+If you are facing any issues regarding the permissions, then you need to run the following command in your project directory:
+
+  ```
+  sudo chmod -R o+rw bootstrap/cache
+  sudo chmod -R o+rw storage
+  ```
 
 ## What's Included 📦
 
@@ -142,7 +190,7 @@ Contribution are always welcome and recommended! Here is how:
 Please refer to the [CHANGELOG](CHANGELOG.md) file. We will add a detailed release notes to each new release.
 
 ## Credits 🙏
-
+- [Laravel](https://laravel.com/)
 - [Vuetify](https://vuetifyjs.com/)
 - [Material Design Icons](https://materialdesignicons.com/)
 - [ApexCharts](https://apexcharts.com/)
