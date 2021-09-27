@@ -1,13 +1,13 @@
 <p align="center"></p>
 
 <p align="center">
-   <a href="https://themeselection.com/products/materio-free-vuetify-vuejs-admin-template" target="_blank">
+   <a href="https://themeselection.com/products/materio-free-vuetify-vuejs-laravel-admin-template" target="_blank">
       <img src="resources/js/src/assets/images/logos/logo.svg" alt="materio-logo" width="60px" height="auto">
    </a>
 </p>
 
 <h1 align="center">
-   <a href="https://themeselection.com/products/materio-free-vuetify-vuejs-admin-template" target="_blank" align="center">
+   <a href="https://themeselection.com/products/materio-free-vuetify-vuejs-laravel-admin-template" target="_blank" align="center">
       Materio - Vuetify VueJS Laravel Free Admin Template
    </a>
 </h1>
@@ -15,17 +15,17 @@
 <p align="center">Production ready carefully crafted most comprehensive admin template</p>
 
 <p align="center">
-   <a href="https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/themeselection/materio-vuetify-vuejs-admin-template-free" alt="license">
+   <a href="https://github.com/themeselection/materio-vuetify-vuejs-laravel-admin-template-free/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/themeselection/materio-vuetify-vuejs-laravel-admin-template-free" alt="license">
    </a>
-   <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/themeselection/materio-vuetify-vuejs-admin-template-free/Deploy">
-   <a href="https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free/releases">
-    <img src="https://img.shields.io/github/release/themeselection/materio-vuetify-vuejs-admin-template-free.svg" alt="GitHub release">
+   <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/themeselection/materio-vuetify-vuejs-laravel-admin-template-free/Deploy">
+   <a href="https://github.com/themeselection/materio-vuetify-vuejs-laravel-admin-template-free/releases">
+    <img src="https://img.shields.io/github/release/themeselection/materio-vuetify-vuejs-laravel-admin-template-free.svg" alt="GitHub release">
   </a>
    <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/Theme_Selection">
 </p>
 
-[![Materio - Vuetify VueJS Free Admin Template Demo Screenshot](https://user-images.githubusercontent.com/47495003/129342383-2816d6fe-3a88-4189-b08f-f30b9abac2b0.png)](https://themeselection.com/products/materio-free-vuetify-vuejs-admin-template)
+[![Materio - Vuetify VueJS Free Admin Template Demo Screenshot](https://user-images.githubusercontent.com/47495003/129342383-2816d6fe-3a88-4189-b08f-f30b9abac2b0.png)](https://themeselection.com/products/materio-free-vuetify-vuejs-laravel-admin-template)
 
 ## Introduction
 
@@ -33,7 +33,7 @@ If you’re a developer looking for an admin dashboard that is developer-friendl
 
 Build premium quality applications with ease. Use our innovative admin template to create eye-catching, high-quality, and high-performing single-page applications. Your apps will be completely responsive, ensuring they’ll look stunning and function flawlessly on desktops, tablets, and mobile devices.
 
-[View Demo](https://themeselection.com/demo/materio-vuetify-vuejs-admin-template-free/demo/)
+[View Demo](https://themeselection.com/demo/materio-vuetify-vuejs-laravel-admin-template-free/demo/)
 
 ## Installation ⚒️
 
@@ -130,8 +130,8 @@ If you are facing any issues regarding the permissions, then you need to run the
 
 | Materio Free Version                                                                             | Materio Premium Version                                                                        |
 | ------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------- |
-| [Demo](https://themeselection.com/demo/materio-vuetify-vuejs-admin-template-free/demo/)          | [Demo](https://themeselection.com/demo/materio-vuetify-vuejs-admin-template/landing)           |
-| [Download](https://themeselection.com/products/materio-free-vuetify-vuejs-admin-template)        | [Purchase](https://themeselection.com/products/materio-vuetify-vuejs-admin-template)           |
+| [Demo](https://themeselection.com/demo/materio-vuetify-vuejs-laravel-admin-template-free/demo/)          | [Demo](https://themeselection.com/demo/materio-vuetify-vuejs-laravel-admin-template/landing)           |
+| [Download](https://themeselection.com/products/materio-free-vuetify-vuejs-laravel-admin-template)        | [Purchase](https://themeselection.com/products/materio-vuetify-vuejs-laravel-admin-template)           |
 | Single vertical menu                                                                             | Vertical (+ vertical collapsed) & Horizontal menu                                              |
 | Simple Light/Dark theme                                                                          | 3 Skin variants w/ light/dark theme support: Default, Bordered & Semi-dark                     |
 | 1 Simple Dashboard                                                                               | 3 Niche Dashboards                                                                             |
@@ -155,7 +155,7 @@ If you are facing any issues regarding the permissions, then you need to run the
 
 ## Documentation 📜
 
-Check GitHub [Wiki](https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free/wiki) of this repo
+Check GitHub [Wiki](https://github.com/themeselection/materio-vuetify-vuejs-laravel-admin-template-free/wiki) of this repo
 
 ## Browser Support 🖥️
 

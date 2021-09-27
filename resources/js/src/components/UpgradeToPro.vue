@@ -15,7 +15,7 @@
       <v-btn
         color="error"
         class="product-upgrade-to-pro"
-        href="https://themeselection.com/demo/materio-vuetify-vuejs-admin-template/landing"
+        href="https://themeselection.com/demo/materio-vuetify-vuejs-laravel-admin-template/landing"
         target="_blank"
         rel="nofollow"
         v-bind="attrs"
@@ -25,21 +25,17 @@
       </v-btn>
     </template>
 
-    <v-card
-      class="elevation-0"
-      max-width="400"
-    >
+    <v-card class="elevation-0" max-width="400">
       <v-img
         max-width="400"
         eager
         :src="require('@/assets/images/pro/materio-banner.png').default"
         alt="materio-pro-banner"
       ></v-img>
-      <v-card-title class="font-weight-semibold">
-        Materio - Vuetify Admin Template
-      </v-card-title>
+      <v-card-title class="font-weight-semibold"> Materio - Vuetify Admin Template </v-card-title>
       <v-card-text>
-        Materio Admin is the most developer friendly &amp; highly customisable Admin Dashboard Template based on Vuetify.
+        Materio Admin is the most developer friendly &amp; highly customisable Admin Dashboard Template based on
+        Vuetify.
       </v-card-text>
       <v-card-text>
         <span>Click on below button to explore PRO version.</span>
@@ -48,7 +44,7 @@
         <v-btn
           color="primary"
           class="me-2"
-          href="https://themeselection.com/demo/materio-vuetify-vuejs-admin-template/landing"
+          href="https://themeselection.com/demo/materio-vuetify-vuejs-laravel-admin-template/landing"
           target="_blank"
           rel="nofollow"
         >
@@ -57,7 +53,7 @@
         <v-btn
           color="primary"
           outlined
-          href="https://themeselection.com/products/materio-vuetify-vuejs-admin-template"
+          href="https://themeselection.com/products/materio-vuetify-vuejs-laravel-admin-template"
           target="_blank"
           rel="nofollow"
         >

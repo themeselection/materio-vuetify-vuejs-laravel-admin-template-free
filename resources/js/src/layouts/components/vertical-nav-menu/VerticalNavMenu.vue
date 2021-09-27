@@ -46,7 +46,11 @@
       <nav-menu-link title="Tables" :to="{ name: 'simple-table' }" :icon="icons.mdiTable"></nav-menu-link>
       <nav-menu-link title="Form Layouts" :to="{ name: 'form-layouts' }" :icon="icons.mdiFormSelect"></nav-menu-link>
     </v-list>
-    <a href="https://themeselection.com/products/materio-vuetify-vuejs-admin-template" target="_blank" rel="nofollow">
+    <a
+      href="https://themeselection.com/products/materio-vuetify-vuejs-laravel-admin-template"
+      target="_blank"
+      rel="nofollow"
+    >
       <v-img
         :src="require(`@/assets/images/pro/upgrade-banner-${$vuetify.theme.dark ? 'dark' : 'light'}.png`).default"
         alt="upgrade-banner"

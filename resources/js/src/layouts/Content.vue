@@ -28,7 +28,7 @@
 
           <!-- Right Content -->
           <a
-            href="https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free"
+            href="https://github.com/themeselection/materio-vuetify-vuejs-laravel-admin-template-free"
             target="_blank"
             rel="nofollow"
           >
@@ -85,7 +85,7 @@
               class="me-6 text--secondary text-decoration-none"
             >Blog</a>
             <a
-              href="https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free/blob/main/LICENSE"
+              href="https://github.com/themeselection/materio-vuetify-vuejs-laravel-admin-template-free/blob/main/LICENSE"
               target="_blank"
               class="text--secondary text-decoration-none"
             >MIT Licence</a>
