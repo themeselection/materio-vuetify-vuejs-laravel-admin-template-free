@@ -18,7 +18,6 @@
    <a href="https://github.com/themeselection/materio-vuetify-vuejs-laravel-admin-template-free/blob/main/LICENSE">
       <img src="https://img.shields.io/github/license/themeselection/materio-vuetify-vuejs-laravel-admin-template-free" alt="license">
    </a>
-   <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/themeselection/materio-vuetify-vuejs-laravel-admin-template-free/Deploy">
    <a href="https://github.com/themeselection/materio-vuetify-vuejs-laravel-admin-template-free/releases">
     <img src="https://img.shields.io/github/release/themeselection/materio-vuetify-vuejs-laravel-admin-template-free.svg" alt="GitHub release">
   </a>
