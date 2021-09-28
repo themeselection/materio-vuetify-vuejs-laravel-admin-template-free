@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# run on git bash
 # env make production
 sed -i "s/APP_ENV=local/APP_ENV=production/g" ./.env
 
