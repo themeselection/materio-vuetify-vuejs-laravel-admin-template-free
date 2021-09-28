@@ -15,7 +15,9 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
-
+free-package.zip
+demo
+demo.zip
 .DS_Store
 node_modules
 /dist
