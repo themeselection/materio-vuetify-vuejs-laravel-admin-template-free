@@ -2,7 +2,7 @@
 
 <p align="center">
    <a href="https://themeselection.com/products/materio-free-vuetify-vuejs-laravel-admin-template" target="_blank">
-      <img src="resources/js/src/assets/images/logos/logo.svg" alt="materio-logo" width="60px" height="auto">
+      <img src="https://github.com/themeselection/materio-vuetify-vuejs-laravel-admin-template-free/blob/main/resources/js/src/assets/images/logos/logo.svg" alt="materio-logo" width="60px" height="auto">
    </a>
 </p>
 
