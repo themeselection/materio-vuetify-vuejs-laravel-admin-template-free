@@ -29,7 +29,7 @@
       <v-img
         max-width="400"
         eager
-        :src="require('@/assets/images/pro/materio-free-ts-banner.png').default"
+        :src="require('@/assets/images/pro/materio-laravel-pro-ts-banner.png').default"
         alt="materio-pro-banner"
       ></v-img>
       <v-card-title class="font-weight-semibold">Materio - Vuejs Laravel Admin Template </v-card-title>
