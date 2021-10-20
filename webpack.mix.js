@@ -17,6 +17,7 @@ const webpack = {
     alias: {
       '@resources': path.resolve(__dirname, 'resources/'),
       '@': path.resolve(__dirname, 'resources/js/src/'),
+      'apexcharts': path.resolve(__dirname, 'node_modules/apexcharts-clevision'),
     },
   },
 }

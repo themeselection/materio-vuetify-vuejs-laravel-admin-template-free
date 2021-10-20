@@ -31,13 +31,14 @@
         "@mdi/js": "^5.9.55",
         "@vue/composition-api": "1.0.4",
         "@vuetify/cli-plugin-utils": "^0.0.9",
-        "apexcharts": "^3.27.3",
+        "apexcharts-clevision": "^3.28.3",
         "core-js": "^3.6.5",
         "vue": "^2.6.11",
         "vue-apexcharts": "^1.6.2",
         "vue-router": "^3.2.0",
         "vuetify": "^2.4.0",
         "vuetifyjs-mix-extension": "0.0.20",
-        "vuex": "^3.4.0"
+        "vuex": "^3.4.0",
+        "webpack": "^5.58.2"
     }
 }
