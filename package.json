@@ -1,4 +1,7 @@
 {
+  "name": "materio-vuetify-vuejs-laravel-admin-template-free",
+  "description": "Production Ready, Carefully Crafted, Extensive Vuetifty Admin Template",
+  "version": "1.0.2",
     "private": true,
     "scripts": {
         "dev": "npm run development",
