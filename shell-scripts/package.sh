@@ -6,7 +6,7 @@ echo 'You should run package.sh from parent folder. eg. ./scripts/package.sh'
 
 mkdir free-package
 
-rsync -aP  ./ ./free-package/ --exclude=node_modules --exclude=vendor --exclude=yarn.lock --exclude=composer.lock --exclude=public/images --exclude=public/js --exclude=shell-scripts --exclude=.git --exclude=free-package    
+rsync -aP  ./ ./free-package/ --exclude=node_modules --exclude=vendor --exclude=yarn.lock --exclude=composer.lock --exclude=public/images --exclude=public/js --exclude=shell-scripts --exclude=.git --exclude=free-package --exclude=.github    
 
 echo 'folders are compressing...'
 
