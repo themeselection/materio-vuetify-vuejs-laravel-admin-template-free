@@ -39,11 +39,11 @@ if (mix.inProduction()) {
   mix.version()
   mix.webpackConfig({
     output: {
-      publicPath: '/demo/materio-vuetify-vuejs-laravel-admin-template-free/demo/',
+      publicPath: '/materio-vuetify-vuejs-laravel-admin-template-free/demo/',
       chunkFilename: 'js/chunks/[name].[chunkhash].js',
     },
   })
-  mix.setResourceRoot('/demo/materio-vuetify-vuejs-laravel-admin-template-free/demo/')
+  mix.setResourceRoot('/materio-vuetify-vuejs-laravel-admin-template-free/demo/')
 }
 
 // ------------------------------------------------

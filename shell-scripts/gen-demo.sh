@@ -12,11 +12,11 @@ mv webpack.mix.js webpack.mix.js.bak
 cp -r ./shell-scripts/webpack.mix.js .
 
 # set your base path inside the
-sed -i "s/base: process.env.BASE_URL/base: '\/demo\/materio-vuetify-vuejs-laravel-admin-template-free\/demo\/'/g" ./resources/js/src/router/index.js
+sed -i "s/base: process.env.BASE_URL/base: '\/materio-vuetify-vuejs-laravel-admin-template-free\/demo\/'/g" ./resources/js/src/router/index.js
 
 yarn prod
 
-sed -i "s/base: '\/demo\/materio-vuetify-vuejs-laravel-admin-template-free\/demo\/'/base: process.env.BASE_URL/g" ./resources/js/src/router/index.js
+sed -i "s/base: '\/materio-vuetify-vuejs-laravel-admin-template-free\/demo\/'/base: process.env.BASE_URL/g" ./resources/js/src/router/index.js
 
 cp -r ./public ./demo
 
