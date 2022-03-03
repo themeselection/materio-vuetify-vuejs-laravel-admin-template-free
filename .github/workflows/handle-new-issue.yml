@@ -1,3 +1,4 @@
+name: 'Handle new issue'
 on:
   issues:
     types: [opened]

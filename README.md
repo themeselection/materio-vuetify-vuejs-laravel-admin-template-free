@@ -1,64 +1,121 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center"></p>
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+   <a href="https://themeselection.com/products/materio-free-vuetify-vuejs-laravel-admin-template/" target="_blank">
+      <img src="https://github.com/themeselection/materio-vuetify-vuejs-laravel-admin-template-free/blob/main/resources/js/src/assets/images/logos/logo.svg" alt="materio-vuetify-vuejs-laravel-admin-template-free-logo" width="60px" height="auto">
+   </a>
 </p>
 
-## About Laravel
+<h1 align="center">
+   <a href="https://themeselection.com/products/materio-free-vuetify-vuejs-laravel-admin-template/" target="_blank" align="center">
+      Materio - Vuetify VueJS Laravel Free Admin Template
+   </a>
+</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">Production ready carefully crafted most comprehensive admin template</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<p align="center">
+   <a href="https://github.com/themeselection/materio-vuetify-vuejs-laravel-admin-template-free/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/themeselection/materio-vuetify-vuejs-laravel-admin-template-free" alt="license">
+   </a>
+   <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/themeselection/materio-vuetify-vuejs-laravel-admin-template-free/Deploy">
+   <a href="https://github.com/themeselection/materio-vuetify-vuejs-laravel-admin-template-free/releases">
+    <img src="https://img.shields.io/github/release/themeselection/materio-vuetify-vuejs-laravel-admin-template-free.svg" alt="GitHub release">
+  </a>
+   <a href="https://twitter.com/Theme_Selection" target="_blank">
+      <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/Theme_Selection">
+   </a>
+</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<kbd>[![Materio - Vuetify VueJS Free Admin Template Demo Screenshot](https://user-images.githubusercontent.com/47495003/156503741-e01cf577-5083-4503-91c5-21a1132262f3.png)](https://themeselection.com/products/materio-free-vuetify-vuejs-laravel-admin-template/)</kbd>
 
-## Learning Laravel
+## Introduction 🚀
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+If you’re a developer looking for an admin dashboard that is developer-friendly, rich with features, and highly customizable look no further than Materio. We’ve followed the highest industry standards to bring you one of the very best [VueJS Admin Laravel Templates](https://themeselection.com/products/category/laravel-admin-templates/) that is not only fast and easy to use but highly scalable. Offering ultimate convenience and flexibility, you’ll be able to build whatever application you want with very little hassle.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Build premium quality applications with ease. Use our innovative admin template to create eye-catching, high-quality, and high-performing single-page applications. Your apps will be completely responsive, ensuring they’ll look stunning and function flawlessly on desktops, tablets, and mobile devices.
 
-## Laravel Sponsors
+[View Demo](https://demos.themeselection.com/materio-vuetify-vuejs-laravel-admin-template-free/demo/)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Installation ⚒️
 
-### Premium Partners
+Please refer to our [docs](https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/documentation/guide/laravel-integration/installation.html)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## What's Included 📦
 
-## Contributing
+* Dashboard
+* Account Settings
+* Pages
+  * Login
+  * Register
+  * Error
+* User Interface
+  *Typography
+  *Icons
+  *Basic Cards
+  *Tables
+  *Form Layouts
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## What's in Premium Version 💎
 
-## Code of Conduct
+| Materio Laravel Free Version        | Materio Laravel Premium Version       |
+| ----------------------------------------------- | :------------------------------------------------ |
+| [Demo](https://demos.themeselection.com/materio-vuetify-vuejs-laravel-admin-template-free/demo/) | [Demo]({product_landing_page_url})                |
+| [Download](https://themeselection.com/products/materio-free-vuetify-vuejs-laravel-admin-template/)               | [Purchase](https://themeselection.com/products/materio-vuetify-vuejs-laravel-admin-template/)                 |
+| Single vertical menu                            | Vertical (+ vertical collapsed) & Horizontal menu |
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Documentation 📜
 
-## Security Vulnerabilities
+Check GitHub [Wiki](https://github.com/themeselection/materio-vuetify-vuejs-laravel-admin-template-free/wiki) of this repo
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Browser Support 🖥️
 
-## License
+Materio Vuetify VueJS Laravel Free Admin Template is built to work best in the latest desktop and mobile and tablet browsers
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+* Chrome (latest)
+* FireFox (latest)
+* Safari (latest)
+* Opera (latest)
+
+## Contributing 🦸
+
+Contribution are always welcome and recommended! Here is how:
+
+* Fork the repository ([here is the guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)).
+* Clone to your machine `git clone https://github.com/YOUR_USERNAME/REPO_URL` Make your changes
+* Create a pull request
+
+### Contribution Requirements 🧰
+
+* When you contribute, you agree to give a non-exclusive license to ThemeSelection to use that contribution in any context as we (ThemeSelection) see appropriate.
+* If you use content provided by another party, it must be appropriately licensed using an open source license.
+* Contributions are only accepted through Github pull requests.
+* Finally, contributed code must work in all supported browsers (see above for browser support).
+
+## Creators 😇
+
+* [ThemeSelection](https://themeselection.com)
+
+## Changelog 📆
+
+Please refer to the [CHANGELOG](CHANGELOG.md) file. We will add a detailed release notes to each new release.
+
+## NOTE 🏷️
+
+**We request you to keep ThemeSelection credit link in the footer section.**
+
+## Looking For Premium Admin Templates ?? 👀
+
+**[ThemeSelection](https://themeselection.com/)** provides Selected high quality, modern design, professional and easy-to-use Free and Premium [Bootstrap Admin Templates](https://themeselection.com/products/category/bootstrap-admin-templates/), [VueJS Admin Templates](https://themeselection.com/products/category/vuejs-admin-templates/), [Laravel Admin Templates](https://themeselection.com/products/category/laravel-admin-templates/), HTML Themes, and [Free UI Kits](https://themeselection.com/products/category/free-ui-kits/) to create your applications faster!.
+
+If you want to [Download Free Admin Templates](https://themeselection.com/products/category/download-free-admin-templates/) like Materio then do visit [ThemeSelection](https://themeselection.com/).
+
+## Other variants
+
+* [Vue variant](https://themeselection.com/products/materio-free-vuetify-vuejs-admin-template/)
+
+## Useful Links 🎁
+
+* [Freebies](https://themeselection.com/products/category/download-free-admin-templates/)
+* [Download Free Admin Templates](https://themeselection.com/products/category/download-free-admin-templates/)
+* [Bootstrap 5 CheatSheet](https://bootstrap-cheatsheet.themeselection.com/)
