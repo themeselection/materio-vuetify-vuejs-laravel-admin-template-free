@@ -39,7 +39,7 @@ Build premium quality applications with ease. Use our innovative admin template 
 
 ## Installation ⚒️
 
-Please refer to our [docs](https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/documentation/guide/laravel-integration/installation.html)
+Please refer to our [docs](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/documentation/guide/laravel-integration/installation.html#guide)
 
 ## What's Included 📦
 
