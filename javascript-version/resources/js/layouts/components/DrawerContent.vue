@@ -120,7 +120,7 @@ const upgradeBanner = computed(() => {
 
   <!-- 👉 illustration -->
   <a
-    href="https://themeselection.com/item/materio-vuetify-vuejs-admin-template"
+    href="https://themeselection.com/item/materio-vuetify-laravel-admin-template"
     target="_blank"
     rel="noopener noreferrer"
   >

@@ -51,7 +51,7 @@ const upgradeBanner = computed(() => {
 
         <IconBtn
           class="me-2"
-          href="https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free"
+          href="https://github.com/themeselection/materio-vuetify-laravel-admin-template-free"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -158,7 +158,7 @@ const upgradeBanner = computed(() => {
     <template #after-vertical-nav-items>
       <!-- 👉 illustration -->
       <a
-        href="https://themeselection.com/item/materio-vuetify-vuejs-admin-template"
+        href="https://themeselection.com/item/materio-vuetify-laravel-admin-template"
         target="_blank"
         rel="noopener noreferrer"
         style="margin-left: 7px;"
