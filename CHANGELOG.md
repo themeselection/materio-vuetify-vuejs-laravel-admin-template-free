@@ -4,6 +4,14 @@
 
 All notable changes to this template will be documented in this file
 
+## v2.0.0 (2023-05-26)
+
+### Added
+
+- Vue 3 version added
+- Vuetify 3 support added
+- TypeScript version added (Vue 3 only)
+
 ## v1.0.2 (2021-11-12)
 
 ### Fixed
