@@ -2,31 +2,32 @@
 
 <p align="center">
    <a href="https://themeselection.com/item/materio-free-vuetify-vuejs-laravel-admin-template/" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/themeselection/ts-assets/materio/materio-vuetify-vuejs-laravel-admin-template/logo/logo.png" alt="materio-logo" width="60px" height="auto">
+      <img src="https://cdn.jsdelivr.net/gh/themeselection/ts-assets/materio/materio-vuetify-vuejs-admin-template-free/logo/logo.png" alt="materio-logo" width="60px" height="auto">
    </a>
 </p>
 
 <h1 align="center">
    <a href="https://themeselection.com/item/materio-free-vuetify-vuejs-laravel-admin-template/" target="_blank" align="center">
-      Materio - Vuetify VueJS Laravel Admin Template
+ Materio – Vuetify Vuejs Laravel Admin Template Free
    </a>
 </h1>
 
-<p align="center">Production ready carefully crafted most comprehensive admin laravel template</p>
+<p align="center">Production Ready, Carefully Crafted, Extensive Vuetify Admin Template</p>
 
 <p align="center">
-   <a href="https://github.com/themeselection/materio-vuetify-vuejs-laravel-admin-template-free/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/themeselection/materio-vuetify-vuejs-laravel-admin-template-free" alt="license">
+   <a href="https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/themeselection/materio-vuetify-vuejs-admin-template-free" alt="license">
    </a>
-   <a href="https://github.com/themeselection/materio-vuetify-vuejs-laravel-admin-template-free/releases">
-    <img src="https://img.shields.io/github/release/themeselection/materio-vuetify-vuejs-laravel-admin-template-free.svg" alt="GitHub release">
+   <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/themeselection/materio-vuetify-vuejs-admin-template-free/Deploy">
+   <a href="https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free/releases">
+    <img src="https://img.shields.io/github/release/themeselection/materio-vuetify-vuejs-admin-template-free.svg" alt="GitHub release">
   </a>
    <a href="https://twitter.com/Theme_Selection" target="_blank">
       <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/Theme_Selection">
    </a>
 </p>
 
-<kbd>[![Materio - Vuetify VueJS Free Admin Template Demo Screenshot](https://cdn.jsdelivr.net/gh/themeselection/ts-assets/materio/materio-vuetify-vuejs-laravel-admin-template/banner/banner.png)](https://themeselection.com/item/materio-free-vuetify-vuejs-laravel-admin-template/)</kbd>
+<kbd>[![Materio – Vuetify Vuejs Laravel Admin Template Demo Screenshot](https://cdn.jsdelivr.net/gh/themeselection/ts-assets/materio/materio-vuetify-vuejs-laravel-admin-template-free/banner/materio-vue-laravel-free.png)](https://themeselection.com/item/materio-free-vuetify-vuejs-laravel-admin-template/))</kbd>
 
 ## Introduction 🚀
 
@@ -34,54 +35,84 @@ If you’re a developer looking for an admin dashboard that is developer-friendl
 
 Build premium quality applications with ease. Use our innovative admin template to create eye-catching, high-quality, and high-performing single-page applications. Your apps will be completely responsive, ensuring they’ll look stunning and function flawlessly on desktops, tablets, and mobile devices.
 
+- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite) & [Vuetify 3](https://next.vuetifyjs.com/en/) - Uses the latest Vuetify 3
+- 🗂 [File based routing](https://github.com/hannoeru/vite-plugin-pages)
+- 📦 [Components auto importing](https://github.com/antfu/unplugin-vue-components)
+- 📑 [Layout system](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
+- 😃 Use icons from any icon sets with classes by [Iconify](https://iconify.design/)
+- 🌍 I18n ready
+- 🔥 Use the [`<script setup>`](https://vuejs.org/api/sfc-script-setup.html) syntax
+- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
+- 🦾 TypeScript & JavaScript versions
+
 [View Demo](https://demos.themeselection.com/materio-vuetify-vuejs-laravel-admin-template-free/demo/)
 
 ## Installation ⚒️
 
-Please refer to our [docs](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/documentation/guide/laravel-integration/installation.html#guide)
+Please [visit](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/documentation/guide/laravel-integration/installation.html) our docs for installation guide.
 
 ## What's Included 📦
 
-* Dashboard
-* Account Settings
-* Pages
-  * Login
-  * Register
-  * Error
-* User Interface
-  *Typography
-  *Icons
-  *Basic Cards
-  *Tables
-  *Form Layouts
+- Dashboard
+- Account Settings
+- Pages
+  - Login
+  - Register
+  - Error
+- User Interface
+  - Typography
+  - Icons
+  - Basic Cards
+  - Tables
+  - Form Layouts
 
 ## What's in Premium Version 💎
 
-| Materio Laravel Free Version        | Materio Laravel Premium Version       |
-| ----------------------------------------------- | :------------------------------------------------ |
-| [Demo](https://demos.themeselection.com/materio-vuetify-vuejs-laravel-admin-template-free/demo/) | [Demo]({product_landing_page_url})                |
-| [Download](https://themeselection.com/products/materio-free-vuetify-vuejs-laravel-admin-template/)               | [Purchase](https://themeselection.com/products/materio-vuetify-vuejs-laravel-admin-template/)                 |
-| Single vertical menu                            | Vertical (+ vertical collapsed) & Horizontal menu |
+| Materio Laravel Free Version                                                                             | Materio Laravel Premium Version                                                                        |
+| ------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------- |
+| [Demo](https://demos.themeselection.com/materio-vuetify-vuejs-laravel-admin-template-free/demo/dashboard)          | [Demo](https://themeselection.com/demo/materio-vuetify-vuejs-laravel-admin-template/landing)           |
+| [Download](https://themeselection.com/item/materio-free-vuetify-vuejs-laravel-admin-template/)        | [Purchase](https://themeselection.com/item/materio-vuetify-vuejs-laravel-admin-template/)           |
+| Single vertical menu                                                                             | Vertical (+ vertical collapsed) & Horizontal menu                                              |
+| Simple Light/Dark theme                                                                          | 3 Skin variants w/ light/dark theme support: Default, Bordered & Semi-dark                     |
+| 1 Simple Dashboard                                                                               | 3 Niche Dashboards                                                                             |
+| -                                                                                                | 5 API ready applications                                                                       |
+| Simple From Elements                                                                             | Advance form elemens, validation & form wizard                                                 |
+| Basic Cards                                                                                      | Basic Cards + Advanced Cards + Statistics Cards                                                |
+| -                                                                                                | API ready JWT Authentication flow                                                              |
+| -                                                                                                | Access Control (even on CRUD operations)                                                       |
+| -                                                                                                | Quick Search - Quickly navigate between pages (w/ hotkey support)                              |
+| Basic Pages                                                                                      | Authentication Pages in 2 variants + Ready to use pages like Pricing, FAQ, Knowledge base, etc |
+| -                                                                                                | 3D Characters + Illustrations                                                                  |
+| Basic tables                                                                                     | Advanced tables                                                                                |
+| Manual customization                                                                             | Quick customization using theme config file                                                    |
+| -                                                                                                | Advanced Charts                                                                                |
+| 1 Chart Library                                                                                  | 2 Chart Libraries                                                                              |
+| -                                                                                                | Multiple Navbar & Menu Options                                                                 |
+| -                                                                                                | Starter-kit                                                                                    |
+| -                                                                                                | Internationalization support in components                                                     |
+| Regular Support                                                                                  | Priority Support                                                                               |
+| Basic Documentation         
 
 ## Documentation 📜
 
-Please refer to our [docs](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/documentation/guide/laravel-integration/installation.html#guide)
+Check out our live [Documentation](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/documentation/)
 
 ## Browser Support 🖥️
 
-Materio Vuetify VueJS Laravel Free Admin Template is built to work best in the latest desktop and mobile and tablet browsers
+At present, we officially aim to support the last two versions of the following browsers:
 
-* Chrome (latest)
-* FireFox (latest)
-* Safari (latest)
-* Opera (latest)
+- Chrome (latest)
+- FireFox (latest)
+- Safari (latest)
+- Microsoft Edge (latest)
+- Opera (latest)
 
 ## Contributing 🦸
 
 Contribution are always welcome and recommended! Here is how:
 
 * Fork the repository ([here is the guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)).
-* Clone to your machine `git clone https://github.com/YOUR_USERNAME/REPO_URL` Make your changes
+* Clone to your machine `git clone https://github.com/YOUR_USERNAME/REPO_NAME` Make your changes
 * Create a pull request
 
 ### Contribution Requirements 🧰
@@ -102,3 +133,27 @@ Please refer to the [CHANGELOG](CHANGELOG.md) file. We will add a detailed relea
 ## NOTE 🏷️
 
 **We request you to keep ThemeSelection credit link in the footer section.**
+
+## Looking For Premium Admin Templates ?? 👀
+
+**[ThemeSelection](https://themeselection.com/)** provides Selected high quality, modern design, professional and easy-to-use Free and Premium [Bootstrap Admin Templates](https://themeselection.com/products/category/bootstrap-admin-templates/), [VueJS Admin Templates](https://themeselection.com/products/category/vuejs-admin-templates/), [Laravel Admin Templates](https://themeselection.com/products/category/laravel-admin-templates/), HTML Themes, and [Free UI Kits](https://themeselection.com/products/category/free-ui-kits/) to create your applications faster!.
+
+If you want to [Download Free Admin Templates](https://themeselection.com/products/category/download-free-admin-templates/) like Materio then do visit [ThemeSelection](https://themeselection.com/).
+
+## Other variants
+
+* [Vue variant](https://themeselection.com/item/materio-free-vuetify-vuejs-admin-template/)
+<!-- Add others here -->
+
+## Useful Links 🎁
+
+* [Freebies](https://themeselection.com/products/category/download-free-admin-templates/)
+* [Download Free Admin Templates](https://themeselection.com/products/category/download-free-admin-templates/)
+* [Bootstrap 5 CheatSheet](https://bootstrap-cheatsheet.themeselection.com/)
+
+## Social Media :earth_africa:
+
+- Twitter : [https://twitter.com/Theme_Selection](https://twitter.com/Theme_Selection)
+- Facebook : [https://www.facebook.com/ThemeSelections/](https://www.facebook.com/ThemeSelections/)
+- Pinterest : [https://pinterest.com/themeselect/](https://pinterest.com/themeselect/)
+- Instagram : [https://www.instagram.com/themeselection/](https://www.instagram.com/themeselection/)
