@@ -17,7 +17,7 @@
       transition="slide-y-reverse-transition"
     >
       <VCard>
-        <VImg src="https://cdn.jsdelivr.net/gh/themeselection/ts-assets/materio/materio-vuetify-vuejs-laravel-admin-template/banner/banner.png" />
+        <VImg src="https://cdn.jsdelivr.net/gh/themeselection/ts-assets/materio/materio-vuetify-vuejs-laravel-admin-template-free/banner/materio-vuetify-vuejs-laravel-admin-template-free.png" />
         <VCardTitle>Materio - Vuetify Laravel Admin Template</VCardTitle>
         <VCardText>
           Materio Admin is the most developer friendly & highly customisable Admin Dashboard Template based on Vuetify.
