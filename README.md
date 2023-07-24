@@ -27,7 +27,7 @@
    </a>
 </p>
 
-<kbd>[![Materio – Vuetify Vuejs Laravel Admin Template Demo Screenshot](https://cdn.jsdelivr.net/gh/themeselection/ts-assets/materio/materio-vuetify-vuejs-laravel-admin-template-free/banner/materio-vuetify-vuejs-laravel-admin-template-free.png)](https://themeselection.com/item/materio-free-vuetify-vuejs-laravel-admin-template/))</kbd>
+<kbd>[![Materio – Vuetify Vuejs Laravel Admin Template Demo Screenshot](https://cdn.jsdelivr.net/gh/themeselection/ts-assets/materio/materio-vuetify-vuejs-laravel-admin-template-free/banner/banner.png)](https://themeselection.com/item/materio-free-vuetify-vuejs-laravel-admin-template/)</kbd>
 
 ## Introduction 🚀
 
