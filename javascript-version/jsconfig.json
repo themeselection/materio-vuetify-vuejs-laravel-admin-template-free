@@ -1,18 +1,13 @@
 {
   "include": [
-    "vite.config.*",
-    "env.d.js",
-    "shims.d.js",
-    "resources/js/**/*",
-    "resources/js/**/*.vue",
-    "themeConfig.js",
-    "auto-imports.d.js",
-    "componenjs.d.js"
+    "./vite.config.*",
+    "./resources/js/**/*",
+    "./resources/js/**/*.vue",
+    "./themeConfig.js"
   ],
   "exclude": [
-    "dist",
-    "node_modules",
-    "resources/js/@iconify/*"
+    "./dist",
+    "./node_modules"
   ],
   "compilerOptions": {
     "baseUrl": "./",
@@ -22,33 +17,32 @@
     "jsx": "preserve",
     "paths": {
       "@/*": [
-        "resources/js/*"
+        "./resources/js/*"
       ],
       "@layouts/*": [
-        "resources/js/@layouts/*"
+        "./resources/js/@layouts/*"
       ],
       "@layouts": [
-        "resources/js/@layouts"
+        "./resources/js/@layouts"
       ],
       "@core/*": [
-        "resources/js/@core/*"
+        "./resources/js/@core/*"
       ],
       "@core": [
-        "resources/js/@core"
+        "./resources/js/@core"
       ],
       "@images/*": [
-        "resources/images/*"
+        "./resources/images/*"
       ],
       "@styles/*": [
-        "resources/styles/*"
+        "./resources/js/styles/*"
       ],
       "@core-scss/*": [
-        "resources/styles/@core"
+        "resources/styles/@core/*"
       ]
     },
     "types": [
       "vite/client",
-      "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client"
     ]
   }

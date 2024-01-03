@@ -32,48 +32,56 @@ const serverKeys = [
     permission: 'Full Access',
   },
 ]
+
+const recentDevicesHeaders = [
+  { title: 'BROWSER', key: 'browser' },
+  { title: 'DEVICE', key: 'device' },
+  { title: 'LOCATION', key: 'location' },
+  { title: 'RECENT ACTIVITY', key: 'recentActivity' },
+]
+
 const recentDevices = [
   {
     browser: 'Chrome on Windows',
     device: 'HP Spectre 360',
     location: 'New York, NY',
     recentActivity: '28 Apr 2022, 18:20',
-    deviceIcon: { icon: 'mdi-microsoft-windows', color: 'primary' },
+    deviceIcon: { icon: 'ri-macbook-line', color: 'primary' },
   },
   {
     browser: 'Chrome on iPhone',
     device: 'iPhone 12x',
     location: 'Los Angeles, CA',
     recentActivity: '20 Apr 2022, 10:20',
-    deviceIcon: { icon: 'mdi-cellphone', color: 'error' },
+    deviceIcon: { icon: 'ri-android-line', color: 'error' },
   },
   {
     browser: 'Chrome on Android',
     device: 'Oneplus 9 Pro',
     location: 'San Francisco, CA',
     recentActivity: '16 Apr 2022, 04:20',
-    deviceIcon: { icon: 'mdi-android', color: 'success' },
+    deviceIcon: { icon: 'ri-smartphone-line', color: 'success' },
   },
   {
-    browser: 'Chrome on MacOS',
+    browser: 'Chrome on macOS',
     device: 'Apple iMac',
     location: 'New York, NY',
     recentActivity: '28 Apr 2022, 18:20',
-    deviceIcon: { icon: 'mdi-apple', color: 'secondary' },
+    deviceIcon: { icon: 'ri-mac-line', color: 'secondary' },
   },
   {
     browser: 'Chrome on Windows',
     device: 'HP Spectre 360',
     location: 'Los Angeles, CA',
     recentActivity: '20 Apr 2022, 10:20',
-    deviceIcon: { icon: 'mdi-microsoft-windows', color: 'primary' },
+    deviceIcon: { icon: 'ri-macbook-line', color: 'primary' },
   },
   {
     browser: 'Chrome on Android',
     device: 'Oneplus 9 Pro',
     location: 'San Francisco, CA',
     recentActivity: '16 Apr 2022, 04:20',
-    deviceIcon: { icon: 'mdi-android', color: 'success' },
+    deviceIcon: { icon: 'ri-android-line', color: 'success' },
   },
 ]
 </script>
@@ -95,8 +103,10 @@ const recentDevices = [
                 <VTextField
                   v-model="currentPassword"
                   :type="isCurrentPasswordVisible ? 'text' : 'password'"
-                  :append-inner-icon="isCurrentPasswordVisible ? 'mdi-eye-off-outline' : 'mdi-eye-outline'"
+                  :append-inner-icon="isCurrentPasswordVisible ? 'ri-eye-off-line' : 'ri-eye-line'"
+                  autocomplete="on"
                   label="Current Password"
+                  placeholder="············"
                   @click:append-inner="isCurrentPasswordVisible = !isCurrentPasswordVisible"
                 />
               </VCol>
@@ -112,8 +122,10 @@ const recentDevices = [
                 <VTextField
                   v-model="newPassword"
                   :type="isNewPasswordVisible ? 'text' : 'password'"
-                  :append-inner-icon="isNewPasswordVisible ? 'mdi-eye-off-outline' : 'mdi-eye-outline'"
+                  :append-inner-icon="isNewPasswordVisible ? 'ri-eye-off-line' : 'ri-eye-line'"
                   label="New Password"
+                  autocomplete="on"
+                  placeholder="············"
                   @click:append-inner="isNewPasswordVisible = !isNewPasswordVisible"
                 />
               </VCol>
@@ -126,8 +138,10 @@ const recentDevices = [
                 <VTextField
                   v-model="confirmPassword"
                   :type="isConfirmPasswordVisible ? 'text' : 'password'"
-                  :append-inner-icon="isConfirmPasswordVisible ? 'mdi-eye-off-outline' : 'mdi-eye-outline'"
+                  :append-inner-icon="isConfirmPasswordVisible ? 'ri-eye-off-line' : 'ri-eye-line'"
+                  autocomplete="on"
                   label="Confirm New Password"
+                  placeholder="············"
                   @click:append-inner="isConfirmPasswordVisible = !isConfirmPasswordVisible"
                 />
               </VCol>
@@ -149,7 +163,7 @@ const recentDevices = [
                 <div>
                   <VIcon
                     size="7"
-                    icon="mdi-circle"
+                    icon="ri-checkbox-blank-circle-fill"
                     class="me-3"
                   />
                 </div>
@@ -165,7 +179,7 @@ const recentDevices = [
             <VBtn
               type="reset"
               color="secondary"
-              variant="tonal"
+              variant="outlined"
             >
               Reset
             </VBtn>
@@ -216,13 +230,17 @@ const recentDevices = [
                   <VCol cols="12">
                     <VSelect
                       label="Choose the API key type you want to create"
+                      placeholder="Select API key type"
                       :items="['Full Control', 'Modify', 'Read & Execute', 'List Folder Contents', 'Read Only', 'Read & Write']"
                     />
                   </VCol>
 
                   <!-- 👉 Name the API Key -->
                   <VCol cols="12">
-                    <VTextField label="Name the API key" />
+                    <VTextField
+                      label="Name the API key"
+                      placeholder="Name the API key"
+                    />
                   </VCol>
 
                   <!-- 👉 Create Key Button -->
@@ -262,7 +280,6 @@ const recentDevices = [
                 {{ serverKey.name }}
               </h6>
               <VChip
-                label
                 color="primary"
                 size="small"
               >
@@ -273,7 +290,7 @@ const recentDevices = [
               <span class="me-3">{{ serverKey.key }}</span>
               <VIcon
                 :size="18"
-                icon="mdi-content-copy"
+                icon="ri-file-copy-line"
                 class="cursor-pointer"
               />
             </p>
@@ -288,42 +305,27 @@ const recentDevices = [
     <VCol cols="12">
       <!-- 👉 Table -->
       <VCard title="Recent Devices">
-        <VTable class="text-no-wrap">
-          <thead>
-            <tr>
-              <th scope="col">
-                BROWSER
-              </th>
-              <th scope="col">
-                DEVICE
-              </th>
-              <th scope="col">
-                LOCATION
-              </th>
-              <th scope="col">
-                RECENT ACTIVITIES
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr
-              v-for="device in recentDevices"
-              :key="device.recentActivity"
-            >
-              <td>
-                <VIcon
-                  start
-                  :icon="device.deviceIcon.icon"
-                  :color="device.deviceIcon.color"
-                />
-                {{ device.browser }}
-              </td>
-              <td>{{ device.device }}</td>
-              <td>{{ device.location }}</td>
-              <td>{{ device.recentActivity }}</td>
-            </tr>
-          </tbody>
-        </VTable>
+        <VDataTable
+          :headers="recentDevicesHeaders"
+          :items="recentDevices"
+          hide-default-footer
+          class="text-no-wrap"
+        >
+          <template #item.browser="{ item }">
+            <div class="d-flex">
+              <VIcon
+                start
+                :icon="item.deviceIcon.icon"
+                :color="item.deviceIcon.color"
+              />
+              <span>
+                {{ item.browser }}
+              </span>
+            </div>
+          </template>
+          <!-- TODO Refactor this after vuetify provides proper solution for removing default footer -->
+          <template #bottom />
+        </VDataTable>
       </VCard>
     </VCol>
     <!-- !SECTION -->

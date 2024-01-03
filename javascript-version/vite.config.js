@@ -1,48 +1,49 @@
+import laravel from 'laravel-vite-plugin'
+import { fileURLToPath } from 'node:url'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import { fileURLToPath } from 'node:url'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { defineConfig } from 'vite'
 import vuetify from 'vite-plugin-vuetify'
-import laravel from 'laravel-vite-plugin'
+import svgLoader from 'vite-svg-loader'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    laravel({
-  input: ['resources/js/main.js'],
-  refresh: true,
-}),
-    vue({
-  template: {
+  plugins: [vue({
+    template: {
       transformAssetUrls: {
-          base: null,
-          includeAbsolute: false,
+        base: null,
+        includeAbsolute: false,
       },
-  },
-}),
-    vueJsx(),
+    },
+  }),
+  vueJsx(),
+  laravel({
+    input: ['resources/js/main.js'],
+    refresh: true,
+  }), // Docs: https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin
+  vuetify({
+    styles: {
+      configFile: 'resources/styles/variables/_vuetify.scss',
+    },
+  }),
+  Components({
+    dirs: ['resources/js/@core/components', 'resources/js/components'],
+    dts: true,
+  }), // Docs: https://github.com/antfu/unplugin-auto-import#unplugin-auto-import
+  AutoImport({
+    imports: ['vue', 'vue-router', '@vueuse/core', '@vueuse/math', 'pinia'],
+    vueTemplate: true,
 
-    // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
-    vuetify({
-      styles: {
-        configFile: 'resources/styles/variables/_vuetify.scss',
-      },
-    }),
-    Components({
-      dirs: ['resources/js/@core/components'],
-      dts: true,
-    }),
-    AutoImport({
-      eslintrc: {
-        enabled: true,
-        filepath: './.eslintrc-auto-import.json',
-      },
-      imports: ['vue', 'vue-router', '@vueuse/core', '@vueuse/math', 'pinia'],
-      vueTemplate: true,
-    }),
-  ],
+    // ℹ️ Disabled to avoid confusion & accidental usage
+    ignore: ['useCookies', 'useStorage'],
+    eslintrc: {
+      enabled: true,
+      filepath: './.eslintrc-auto-import.json',
+    },
+  }),
+  svgLoader()],
   define: { 'process.env': {} },
   resolve: {
     alias: {
@@ -53,8 +54,6 @@ export default defineConfig({
       '@images': fileURLToPath(new URL('./resources/images/', import.meta.url)),
       '@styles': fileURLToPath(new URL('./resources/styles/', import.meta.url)),
       '@configured-variables': fileURLToPath(new URL('./resources/styles/variables/_template.scss', import.meta.url)),
-      '@axios': fileURLToPath(new URL('./resources/js/plugins/axios', import.meta.url)),
-      'apexcharts': fileURLToPath(new URL('node_modules/apexcharts-clevision', import.meta.url)),
     },
   },
   build: {

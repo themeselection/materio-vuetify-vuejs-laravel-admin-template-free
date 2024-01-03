@@ -15,28 +15,28 @@
     "esModuleInterop": true,
     "paths": {
       "@/*": [
-        "resources/ts/*"
+        "./resources/ts/*"
       ],
       "@layouts/*": [
-        "resources/ts/@layouts/*"
+        "./resources/ts/@layouts/*"
       ],
       "@layouts": [
-        "resources/ts/@layouts"
+        "./resources/ts/@layouts"
       ],
       "@core/*": [
-        "resources/ts/@core/*"
+        "./resources/ts/@core/*"
       ],
       "@core": [
-        "resources/ts/@core"
+        "./resources/ts/@core"
       ],
       "@images/*": [
-        "resources/images/*"
+        "./resources/images/*"
       ],
       "@styles/*": [
-        "resources/styles/*"
+        "./resources/ts/styles/*"
       ],
       "@core-scss/*": [
-        "resources/styles/@core"
+        "resources/styles/@core/*"
       ]
     },
     "lib": [
@@ -48,23 +48,22 @@
     "skipLibCheck": true,
     "types": [
       "vite/client",
-      "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client"
     ]
   },
   "include": [
-    "vite.config.*",
-    "env.d.ts",
-    "shims.d.ts",
-    "resources/ts/**/*",
-    "resources/ts/**/*.vue",
-    "themeConfig.ts",
-    "auto-imports.d.ts",
-    "components.d.ts"
+    "./typed-router.d.ts",
+    "./vite.config.*",
+    "./env.d.ts",
+    "./shims.d.ts",
+    "./resources/ts/**/*",
+    "./resources/ts/**/*.vue",
+    "./themeConfig.ts",
+    "./auto-imports.d.ts",
+    "./components.d.ts"
   ],
   "exclude": [
-    "dist",
-    "node_modules",
-    "resources/ts/@iconify/*"
+    "./dist",
+    "./node_modules"
   ]
 }

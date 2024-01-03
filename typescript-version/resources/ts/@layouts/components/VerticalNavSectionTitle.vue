@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { NavSectionTitle } from '@layouts/types';
+import type { NavSectionTitle } from '@layouts/types'
 
 defineProps<{
   item: NavSectionTitle
@@ -7,9 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <li
-    class="nav-section-title"
-  >
+  <li class="nav-section-title">
     <div class="title-wrapper">
       <!-- eslint-disable vue/no-v-text-v-html-on-component -->
       <span

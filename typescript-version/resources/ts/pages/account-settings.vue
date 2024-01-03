@@ -10,9 +10,9 @@ const activeTab = ref(route.params.tab)
 
 // tabs
 const tabs = [
-  { title: 'Account', icon: 'mdi-account-outline', tab: 'account' },
-  { title: 'Security', icon: 'mdi-lock-open-outline', tab: 'security' },
-  { title: 'Notifications', icon: 'mdi-bell-outline', tab: 'notification' },
+  { title: 'Account', icon: 'ri-group-line', tab: 'account' },
+  { title: 'Security', icon: 'ri-lock-line', tab: 'security' },
+  { title: 'Notifications', icon: 'ri-notification-3-line', tab: 'notification' },
 ]
 </script>
 
@@ -35,11 +35,11 @@ const tabs = [
         {{ item.title }}
       </VTab>
     </VTabs>
-    <VDivider />
 
     <VWindow
       v-model="activeTab"
       class="mt-5 disable-tab-transition"
+      :touch="false"
     >
       <!-- Account -->
       <VWindowItem value="account">
