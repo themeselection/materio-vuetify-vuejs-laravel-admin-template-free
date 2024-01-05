@@ -4,6 +4,21 @@
 
 All notable changes to this template will be documented in this file
 
+## v2.1.0 (2024-01-05)
+
+### Added
+
+- Added Remix Icons
+
+### Updated
+
+- Updated all dependencies and devDependencies to latest
+- Updated Laravel version to latest
+
+### Removed
+
+- Material Design icons removed
+
 ## v2.0.0 (2023-05-26)
 
 ### Added
