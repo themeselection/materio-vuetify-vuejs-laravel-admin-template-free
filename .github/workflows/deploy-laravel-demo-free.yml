@@ -57,7 +57,7 @@ jobs:
         run: pnpm tsx src/templates/${{ env.BRAND_NAME }}/scripts/genLaravelDemos.ts --isFree $([[ "${{ inputs.is_production }}" != "true" ]] && echo --staging)
 
       - name: 🚀 Upload demos zip
-        uses: appleboy/scp-action@v0.1.3
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
