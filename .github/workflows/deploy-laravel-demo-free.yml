@@ -1,0 +1,121 @@
+name: Deploy - Demos Free
+run-name: ${{ inputs.is_production && '🚀' || '🧪' }} Deploy - Demos Free
+
+on:
+  workflow_dispatch:
+    inputs:
+      is_production:
+        type: boolean
+        description: Is production deployment
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    env:
+      STAG_DIR: ${{ secrets.PROD_DIR }}staging/
+      DEPLOY_DIR: ${{ secrets.PROD_DIR }}${{ !inputs.is_production && 'staging/' || '' }}
+    steps:
+
+      - name: ⚙️ Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+            
+      - name: ⚙️ Set BRAND_NAME environment variable from repo name
+        run: echo BRAND_NAME=${{ github.event.repository.name }} | cut -d '-' -f1 >> $GITHUB_ENV
+
+      - name: ⬇️ Clone current repo under /<template-name>/vue-laravel-free
+        uses: actions/checkout@v3
+        with:
+          path: ${{ env.BRAND_NAME }}/vue-laravel-free
+
+      - name: ⬇️ Clone automation scripts repo under /automation-scripts
+        uses: actions/checkout@v3
+        with:
+          repository: themeselection/automation-scripts
+          token: ${{ secrets.GH_PAT }}
+          path: automation-scripts
+      
+      - name: ⬇️ Install packages in automation-scripts dir
+        working-directory: automation-scripts/vue
+        run: pnpm install
+
+      - name: ⚙️ Set LARAVEL_CORE_DIR_NAME environment variable from generated env file
+        working-directory: automation-scripts/vue
+        run: pnpm tsx src/templates/${{ env.BRAND_NAME }}/scripts/genLaravelCoreDirNameEnvFile.ts --isFree $([[ "${{ inputs.is_production }}" != "true" ]] && echo --staging) && cat .env.laravel-core-dir-name >> $GITHUB_ENV
+
+      - name: ⬇️ Install packages in typescript full version
+        working-directory: ${{ env.BRAND_NAME }}/vue-laravel-free/typescript-version
+        run: pnpm i && composer install
+        
+      - name: 🎭 Create .env file from .env.example & generate APP_KEY via `php artisan key:generate`
+        working-directory: ${{ env.BRAND_NAME }}/vue-laravel-free/typescript-version
+        run: cp .env.example .env && php artisan key:generate
+
+      - name: 📦 Generate demos
+        working-directory: automation-scripts/vue
+        run: pnpm tsx src/templates/${{ env.BRAND_NAME }}/scripts/genLaravelDemos.ts --isFree $([[ "${{ inputs.is_production }}" != "true" ]] && echo --staging)
+
+      - name: 🚀 Upload demos zip
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.SSHKEY }}
+          source: ${{ env.BRAND_NAME }}/vue-laravel-free/typescript-version/*.zip
+          target: ${{ secrets.LARAVEL_CORE_CONTAINER_DIR }}
+          strip_components: 3
+
+      - name: 🪄 Setup demos
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.SSHKEY }}
+          script: |
+            # create deployment dir if doesn't exist
+            mkdir -p ${{ env.DEPLOY_DIR }}
+
+            # navigate to laravel core container dir
+            cd ${{ secrets.LARAVEL_CORE_CONTAINER_DIR }}
+
+            # Remove existing backup zip
+            rm -rf bak-${{ env.LARAVEL_CORE_DIR_NAME }}-*.zip
+
+            # Remove existing laravel core dir
+            rm -rf ${{ env.LARAVEL_CORE_DIR_NAME }}
+
+            # if prod => zip existing laravel core
+            DEMO_ZIP_NAME="bak-${{ env.LARAVEL_CORE_DIR_NAME }}-$(date +"%Y-%m-%d-%H-%M-%S").zip"
+            [[ "${{ inputs.is_production }}" == "true" ]] && zip -r $DEMO_ZIP_NAME ${{ env.LARAVEL_CORE_DIR_NAME }} -x "*.zip"
+
+            # remove existing staging laravel core & staging demos
+            # ℹ️ Previously we were only performing this removal if `inputs.is_production` is true but doing this for staging as well might remove permission issue in future
+            rm -rf ${{ env.STAG_DIR }}/demo
+
+            # Remove staging laravel core dir
+            # ℹ️ This is tricky because if it's staging then `env.LARAVEL_CORE_DIR_NAME` will have `-staging` already suffixed and work perfectly without below command.
+            # Additionally, below command will result in something like this (that won't do anything) in staging env: `rm -rf <brand>-vuejs-laravel-admin-template-staging-staging`
+            # However, in production it will allow us to remove staging laravel core dir
+            rm -rf ${{ env.LARAVEL_CORE_DIR_NAME }}-staging
+            
+            # remove existing demos
+            rm -rf ${{ env.DEPLOY_DIR }}/demo
+            
+            # unzip the uploaded laravel core. "-q" option will silently unzip without logs
+            unzip -q ${{ env.LARAVEL_CORE_DIR_NAME }}.zip
+            
+            # remove the uploaded zip
+            rm -rf ${{ env.LARAVEL_CORE_DIR_NAME }}.zip
+                        
+            # ATM, we have successfully, uploaded the zip to server with file cleanup. Next, just move the demo in its place
+            
+            mv ${{ env.LARAVEL_CORE_DIR_NAME }}/demo ${{ env.DEPLOY_DIR }}
+            
+            # create logs dir & laravel.log file in laravel core if doesn't exist. We are doing "echo ls $" because if we don't, "mkdir -p" will create dir as "<brand>*" instead of full name "<brand>-xxx"
+            mkdir -p ${{ env.LARAVEL_CORE_DIR_NAME }}/storage/logs/ && touch ${{ env.LARAVEL_CORE_DIR_NAME }}/storage/logs/laravel.log
+            
+            # grant read & write permission to group & other
+            chmod -R g+rw ${{ env.LARAVEL_CORE_DIR_NAME }}/storage
