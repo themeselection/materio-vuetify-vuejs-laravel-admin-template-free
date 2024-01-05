@@ -70,6 +70,5 @@
   "overrides": {
     "stylelint-order": "6.0.3"
   },
-  "packageManager": "pnpm@8.6.2",
-  "version": "2.1.0"
+  "packageManager": "pnpm@8.6.2"
 }
