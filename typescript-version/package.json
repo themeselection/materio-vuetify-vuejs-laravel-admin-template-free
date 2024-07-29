@@ -80,5 +80,6 @@
   "overrides": {
     "stylelint-order": "6.0.3",
     "sass": "1.76.0"
-  }
+  },
+  "version": "2.1.1"
 }

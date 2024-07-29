@@ -4,6 +4,12 @@
 
 All notable changes to this template will be documented in this file
 
+## v2.1.1 (2024-07-29)
+
+### Updated
+
+- Updated all the libraries to the latest version
+
 ## v2.1.0 (2024-01-05)
 
 ### Added
