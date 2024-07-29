@@ -1,6 +1,4 @@
-<!-- eslint-disable no-restricted-imports -->
 <script setup lang="ts">
-import VueApexCharts from 'vue3-apexcharts'
 import { useTheme } from 'vuetify'
 import { hexToRgb } from '@layouts/utils'
 
@@ -96,6 +94,12 @@ const options = computed(() => {
 })
 
 const series = [{ data: [37, 57, 45, 75, 57, 40, 65] }]
+
+const moreList = [
+  { title: 'Share', value: 'Share' },
+  { title: 'Refresh', value: 'Refresh' },
+  { title: 'Update', value: 'Update' },
+]
 </script>
 
 <template>
@@ -105,7 +109,7 @@ const series = [{ data: [37, 57, 45, 75, 57, 40, 65] }]
 
       <template #append>
         <div class="me-n3">
-          <MoreBtn />
+          <MoreBtn :menu-list="moreList" />
         </div>
       </template>
     </VCardItem>

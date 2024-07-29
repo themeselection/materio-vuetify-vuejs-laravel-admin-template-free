@@ -10,6 +10,7 @@ module.exports = {
     'plugin:promise/recommended',
     'plugin:sonarjs/recommended',
     'plugin:case-police/recommended',
+    'plugin:regexp/recommended',
 
     // 'plugin:unicorn/recommended',
   ],
@@ -21,8 +22,9 @@ module.exports = {
   plugins: [
     'vue',
     'regex',
+    'regexp',
   ],
-  ignorePatterns: ['resources/js/plugins/iconify/*.js', 'node_modules', 'dist', '*.d.ts', 'vendor'],
+  ignorePatterns: ['resources/js/plugins/iconify/*.js', 'node_modules', 'dist', '*.d.ts', 'vendor', '*.json'],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
@@ -99,7 +101,7 @@ module.exports = {
     'import/newline-after-import': ['error', { count: 1 }],
     'no-restricted-imports': ['error', 'vuetify/components', {
       name: 'vue3-apexcharts',
-      message: 'apexcharts are autoimported',
+      message: 'apexcharts are auto imported',
     }],
 
     // For omitting extension for ts files
@@ -119,6 +121,8 @@ module.exports = {
       ignore: [
         '~pages$',
         'virtual:generated-layouts',
+        '#auth$',
+        '#components$',
 
         // Ignore vite's ?raw imports
         '.*\?raw',
@@ -228,25 +232,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: true,
-      'eslint-import-resolver-custom-alias': {
-        'alias': {
-          "@core-scss": "./resources/styles/@core",
-          "@": "./resources/js",
-          "@core": "./resources/js/@core",
-          "@layouts": "./resources/js/@layouts",
-          "@images": "./resources/images/",
-          "@styles": "./resources/styles/",
-          "@configured-variables": "./resources/styles/variables/_template.scss",
-        },
-        'extensions': [
-          '.ts',
-          '.js',
-          '.tsx',
-          '.jsx',
-          '.mjs',
-        ],
-      },
-      typescript: {},
+      typescript: { project: './jsconfig.json' },
     },
   },
 }

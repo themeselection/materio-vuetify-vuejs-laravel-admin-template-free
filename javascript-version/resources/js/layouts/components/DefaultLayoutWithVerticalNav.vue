@@ -39,7 +39,6 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
         <VSpacer />
 
         <IconBtn
-          class="me-2"
           href="https://github.com/themeselection/materio-vuetify-vuejs-laravel-admin-template-free"
           target="_blank"
           rel="noopener noreferrer"
@@ -47,7 +46,7 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
           <VIcon icon="ri-github-fill" />
         </IconBtn>
 
-        <IconBtn class="me-2">
+        <IconBtn>
           <VIcon icon="ri-notification-line" />
         </IconBtn>
 
@@ -62,10 +61,12 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
         to="/"
         class="app-logo app-title-wrapper"
       >
+        <!-- eslint-disable vue/no-v-html -->
         <div
           class="d-flex"
           v-html="logo"
         />
+        <!-- eslint-enable -->
 
         <h1 class="font-weight-medium leading-normal text-xl text-uppercase">
           Materio

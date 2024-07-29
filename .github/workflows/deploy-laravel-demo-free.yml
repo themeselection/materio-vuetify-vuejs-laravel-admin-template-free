@@ -15,12 +15,19 @@ jobs:
       STAG_DIR: ${{ secrets.PROD_DIR }}staging/
       DEPLOY_DIR: ${{ secrets.PROD_DIR }}${{ !inputs.is_production && 'staging/' || '' }}
     steps:
-
       - name: ⚙️ Setup pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v4
         with:
           version: 8
-            
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "latest"
+
+      - name: Check PHP version
+        run: php -v
+
       - name: ⚙️ Set BRAND_NAME environment variable from repo name
         run: echo BRAND_NAME=${{ github.event.repository.name }} | cut -d '-' -f1 >> $GITHUB_ENV
 
@@ -35,7 +42,7 @@ jobs:
           repository: themeselection/automation-scripts
           token: ${{ secrets.GH_PAT }}
           path: automation-scripts
-      
+
       - name: ⬇️ Install packages in automation-scripts dir
         working-directory: automation-scripts/vue
         run: pnpm install
@@ -47,7 +54,7 @@ jobs:
       - name: ⬇️ Install packages in typescript full version
         working-directory: ${{ env.BRAND_NAME }}/vue-laravel-free/typescript-version
         run: pnpm i && composer install
-        
+
       - name: 🎭 Create .env file from .env.example & generate APP_KEY via `php artisan key:generate`
         working-directory: ${{ env.BRAND_NAME }}/vue-laravel-free/typescript-version
         run: cp .env.example .env && php artisan key:generate
@@ -100,22 +107,23 @@ jobs:
             # Additionally, below command will result in something like this (that won't do anything) in staging env: `rm -rf <brand>-vuejs-laravel-admin-template-staging-staging`
             # However, in production it will allow us to remove staging laravel core dir
             rm -rf ${{ env.LARAVEL_CORE_DIR_NAME }}-staging
-            
+
             # remove existing demos
             rm -rf ${{ env.DEPLOY_DIR }}/demo
-            
+
             # unzip the uploaded laravel core. "-q" option will silently unzip without logs
             unzip -q ${{ env.LARAVEL_CORE_DIR_NAME }}.zip
-            
+
             # remove the uploaded zip
             rm -rf ${{ env.LARAVEL_CORE_DIR_NAME }}.zip
                         
             # ATM, we have successfully, uploaded the zip to server with file cleanup. Next, just move the demo in its place
-            
+
             mv ${{ env.LARAVEL_CORE_DIR_NAME }}/demo ${{ env.DEPLOY_DIR }}
-            
+
             # create logs dir & laravel.log file in laravel core if doesn't exist. We are doing "echo ls $" because if we don't, "mkdir -p" will create dir as "<brand>*" instead of full name "<brand>-xxx"
             mkdir -p ${{ env.LARAVEL_CORE_DIR_NAME }}/storage/logs/ && touch ${{ env.LARAVEL_CORE_DIR_NAME }}/storage/logs/laravel.log
-            
+
             # grant read & write permission to group & other
             chmod -R g+rw ${{ env.LARAVEL_CORE_DIR_NAME }}/storage
+            chmod -R g+rw ${{ env.LARAVEL_CORE_DIR_NAME }}/database/database.sqlite
