@@ -1,4 +1,4 @@
-name: Deploy - Demos Free
+name: 🚀 Deploy - Demos Free
 run-name: ${{ inputs.is_production && '🚀' || '🧪' }} Deploy - Demos Free
 
 on:
