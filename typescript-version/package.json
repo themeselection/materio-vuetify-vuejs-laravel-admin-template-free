@@ -82,5 +82,6 @@
     "postcss": "^8",
     "stylelint-order": "6.0.3",
     "@types/video.js": "^7"
-  }
+  },
+  "version": "2.2.0"
 }
